@@ -34,4 +34,6 @@ Documents Structure v0.0.1a 2024-03-29
     offset:
         offset == cumsum(len(each document))
         seek(offset) 
+    
+    TODO. increment index 
 """

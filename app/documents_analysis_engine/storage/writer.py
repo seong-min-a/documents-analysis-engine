@@ -1,3 +1,4 @@
+import os
 import constants 
 import json
 import gzip 
@@ -12,7 +13,7 @@ class DocumentsWriter:
         documents: list, 
     ):
         """
-        Only append
+        append only
         """
         with open(documents_file_path, 'a+b') as f:
             offset_list = []
@@ -37,3 +38,14 @@ class DocumentsWriter:
                 offset += write_byte_size
                 offset_list.append(offset)
             return offset_list
+
+    def drop_documents(
+        self,
+        documents_file_path: str
+    ):
+        try:
+            os.remove(documents_file_path)
+        except Exception as e:
+            print(e) # ignore
+        return 
+        

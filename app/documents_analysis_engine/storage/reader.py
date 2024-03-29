@@ -36,6 +36,7 @@ class DocumentsReader:
                         }
                     )
                     documents_num += 1
+                # TODO. yield
                 return documents
         except FileNotFoundError as e:
             print(e)

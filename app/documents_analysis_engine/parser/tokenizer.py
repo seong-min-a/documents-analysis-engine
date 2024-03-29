@@ -11,6 +11,7 @@ class Tokenizer:
         split_str: str = r'[\t\n`\-=~!@#$%^&*()_+\[\]{};\'\\:"|<,./<>? ]', 
         index_column_name: str = 'sentence',
         token_option: str = 'lower',
+        # TODO. inject tokenizer
     ):
         tokens_dict = defaultdict(list)
         for document in documents:

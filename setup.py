@@ -20,7 +20,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "documents_analysis_engine"},
-    packages=setuptools.find_packages(where="documents_analysis_engine"),
+    package_dir={"": "app"},
+    packages=setuptools.find_packages(where="app"),
     python_requires=">=3.8",
 )
