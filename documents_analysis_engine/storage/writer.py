@@ -11,6 +11,9 @@ class DocumentsWriter:
         documents_file_path: str,
         documents: list, 
     ):
+        """
+        Only append
+        """
         with open(documents_file_path, 'a+b') as f:
             offset_list = []
             offset = f.tell()
